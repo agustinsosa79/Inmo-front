@@ -73,7 +73,7 @@ const FeaturedProperties = () => {
       <div className="mt-8 ml-4 flex lg:items-end lg:justify-end">
   <Link
     to="/propiedades"
-    className="lg:text-sm flex font-semibold uppercase items-center gap-2 tracking-widest text-xs py-2 px-5 lg:py-3 lg:px-6 rounded-full border-2 border-red-800 text-red-800 hover:bg-red-800 hover:text-white transition-all duration-300"
+    className="lg:text-sm relative flex font-semibold uppercase items-center gap-2 tracking-widest overflow-hidden text-xs py-2 px-5 lg:py-3 lg:px-6 rounded-full border-2 border-red-800 text-red-800 hover:bg-red-800 hover:text-white transition-all duration-300"
   >
     <ArrowUpRight size={17}  />
     Ver todas las propiedades
