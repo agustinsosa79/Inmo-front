@@ -25,6 +25,7 @@ import { InquiryApi } from "../../../../features/inquiries/services/inquiryApi";
 import { usePropertyStore } from "../../../../features/properties/store/propertyStore";
 import { transactionTypeLabels } from "../../../../features/dashboard/components/utils/translatorTypes";
 import { propertyTypeLabels } from "../constants/PropertyLabels";
+import { defaultIcon } from "../utils/leafletIcon";
 const WHATSAPP_NUMBER = "5492216946073"; // TODO: reemplazar por el número real de la inmobiliaria
 
 const PropertyDetails = () => {
@@ -353,7 +354,7 @@ const handleShare = async () => {
       className="h-100 w-full rounded-2xl overflow-hidden"
       >
       <TileLayer url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png" />
-      <Marker position={position} />
+      <Marker position={position}  icon={defaultIcon}  />
     </MapContainer>
     </div>
     <a
